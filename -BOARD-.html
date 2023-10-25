@@ -1,0 +1,616 @@
+	 <!DOCTYPE html>
+ <html>
+ <head>
+ 
+	 <title>-BOARD-</title>
+	  
+  	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	 
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+ 		
+ 		
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css" rel="stylesheet"> 
+
+   
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+	 <body  style="background-color: BurlyWood ;  ">
+	 	 
+	 <style>
+
+
+	 *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+
+
+
+body {
+   
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    	background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+nav{ 
+ background-image: linear-gradient(to right,  #FFCB86 , brown);
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+label.logo{
+  color: black;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.active,.a:hover{
+ background: white;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+     transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 1070px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    opacity: 0.5;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  .a:hover,.active{
+    background: white;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	 .post-card {
+  	width: 100%;
+  	height: 30rem;
+  	background-image: linear-gradient(to right,  #FFCB86 , brown);
+ 	margin-top: 300px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+  
+}
+
+
+hr {
+  border: 1px solid #464646;
+  width: 100%;
+  border-radius: 10em;
+  margin-top: 25px;
+}
+
+.button-row {
+  margin-top: 30px;
+  margin-bottom: 3px;
+}
+
+.button-row button {
+  border-radius: 50%;
+  border: none;
+  width: 80px;
+  height: 80px;
+  font-family: Sans-serif;
+  color: #fff;
+  box-shadow: 12px 8px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.button-row button:hover {
+  transform: translateY(-5px);
+  box-shadow: -12px 15px 6px rgba(0, 0, 0, 0.25);
+}
+
+.people {
+  font-size: 13px;
+background: linear-gradient(to left,  red, black); font-weight: bold;
+  margin-right: 150px;
+}
+
+
+.people2 {
+  font-size: 13px;
+  background:  linear-gradient(180deg, khaki -3%, MidnightBlue 95%)  ; font-weight: bold;
+}
+
+
+.location {
+  font-size: 10px;
+  background: linear-gradient(to left,  red, black);
+  margin-left: 150px; font-weight: bold;
+}
+
+
+
+  
+
+  
+  .green-box{
+     height: 7rem;
+     width: 500px;
+     background:  linear-gradient(180deg, khaki -3%, MidnightBlue 95%)  ;
+     color: black;
+     border-radius: 30px;
+     text-align: centre; 
+     justify-content: centre;
+        
+     
+}
+
+
+.green-box .trans-text {
+     display: flex;
+     justify-content: centre;
+     padding: 15px;
+}
+.amount{
+
+margin-left: 170px;
+font-weight: bold;
+color: black;
+
+}
+
+
+
+a{
+
+text-decoration: none;
+color: black;
+
+	}
+
+	h3{
+margin-top: 0;
+margin-bottom: 20px;
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #040032; 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;   color: #191654;
+  z-index: 1;
+}
+
+
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: #FFCB86 ;
+  font-size: 30px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+	
+	 .loader-3 {
+  width: 25em;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px; 
+}
+
+.circle {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle:nth-child(1) {
+  background-color: #FFCB86 ;
+}
+
+.circle:nth-child(2) {
+  background-color: #FFCB86 ;
+}
+
+.circle:nth-child(3) {
+  background-color: brown;
+}
+
+.circle:nth-child(4) {
+  background-color: brown;
+}
+
+.circle:nth-child(5) {
+  background-color: brown;
+}
+
+.circle::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: animateLoader38 2s ease-out infinite;
+}
+
+.circle:nth-child(1)::before {
+  background-color: #FFCB86 ;
+}
+
+.circle:nth-child(2)::before {
+  background-color: #FFCB86 ;
+  animation-delay: 0.2s;
+}
+
+.circle:nth-child(3)::before {
+  background-color: brown;
+  animation-delay: 0.4s;
+}
+
+.circle:nth-child(4)::before {
+  background-color: brown;
+  animation-delay: 0.6s;
+}
+
+.circle:nth-child(5)::before {
+  background-color: brown;
+  animation-delay: 0.8s;
+}
+
+@keyframes animateLoader38 {
+  0% {
+    transform: scale(1);
+  }
+
+  50%,
+  75% {
+    transform: scale(2.5);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+	
+	
+	
+	
+	
+	
+	
+	 
+	
+	
+	 </style> 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">MONEY-SEED</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a  class="a"	href="#">Fund Wallet</a></li>
+        <li><a  class="a"	href="#">Withdraw</a></li>
+        <li><a  class="a"	href="#">Plans</a></li>
+        <li><a  class="a"	href="#">History</a></li>
+      </ul>
+    </nav>
+    
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	
+	
+	
+	 
+	
+	
+	
+<div class="post-card"> 
+
+        <h3>WELCOME ON BOARD LETS GROW YOUR WEALTH TREE</h3>
+ 
+ 
+    <div class="green-box">
+         <div class="trans-text">
+              </div>
+
+         <p class="amount"> <span class="line-through">Total Earnings=N</span>0.00</p>
+
+         <p class="amount"> <span class="line-through">Wallet balance=N</span>1,000</p>
+
+        </div>
+        
+	<hr>
+	
+	
+	<div class="button-row" id="second" >
+	
+	
+	 <a href="#"><button  class="people">
+    
+	DEPOSIT
+
+    </button></a>
+  <a href="#"><button  class="people2">
+
+       
+  	WITHDRAW
+  
+    </button></a>  
+    
+    <a href="#"> <button  class="location">
+    
+   
+     INVESTMENT PLANS
+    
+    
+    </button></a>
+    
+	
+	
+	</div>
+	
+	
+	
+	
+	
+	 <div class="button-row" id="second" >
+	
+	
+	 <a href="#"><button  class="people">
+    
+	REFFERALS
+
+    </button></a>
+  <a href="#"><button  class="people2">
+
+       REFER AND EARN
+  	
+  
+    </button></a>  
+    
+    <a href="#"> <button  class="location">
+    
+   
+     TRANSACTION HISTORY
+    
+    
+    </button></a>
+    
+	
+	
+	</div>
+	
+	
+	
+	
+	
+	
+
+ 	<script>
+	 	 	
+	 	 swal({ 	
+			
+			title: "Sweet!", 	 
+			
+			 text: "Here's a custom image.", 	
+			 
+			  icon: "https://picsum.photos/id/1/200/300" 	
+			  
+			  }); }
+			  
+
+			  
+			  
+	 	</script>
+	 	
+	 	
+	 	
+	 	
+ 
+
+
+ 
+	 <div class="loading-page">
+	 
+	 
+	 
+	 
+	 <div class="loader-3">
+    <div class="circle"></div>
+    
+    <div class="circle"></div>
+   
+    <div class="circle"></div>
+    
+    <div class="circle"></div>
+</div>
+
+	 
+	 	  <div class="name-container">
+            <div class="logo-name">MONEY-SEED</div>
+            
+            
+            
+        </div>
+	 	</div>	
+	 	
+	 
+	 	
+	 	
+	 	
+	 	
+	 	 	
+	 
+	 </body>
+	 
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+<script src="loader.js"></script>
+	 
+ </html>
