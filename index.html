@@ -4,14 +4,9 @@
  
 	 <title>-BOARD-</title>
 	  
-  	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	 
- 		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
- 		
- 		
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css" rel="stylesheet"> 
-
-   
+  	 
+ 		<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
     
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     
@@ -551,19 +546,13 @@ margin-bottom: 20px;
 
  	<script>
 	 	 	
-	 	 swal({ 	
-			
-			title: "Sweet!", 	 
-			
-			 text: "Here's a custom image.", 	
-			 
-			  icon: "https://picsum.photos/id/1/200/300" 	
-			  
-			  }); }
-			  
+Swal.fire({
+  title: 'Error!',
+  text: 'Do you want to continue',
+  icon: 'error',
+  confirmButtonText: 'Cool'
+})
 
-			  
-			  
 	 	</script>
 	 	
 	 	
